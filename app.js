@@ -45,7 +45,7 @@ app.use(require('./routes'));
 
 /// catch 404 and forward to error handler
 app.use(function (req, res, next) {
-  let err = new Error('Not Found');
+  let err = new Error('Not Found Duump');
   err.status = 404;
   next(err);
 });
@@ -83,5 +83,5 @@ app.use(function (err, req, res, next) {
 
 // finally, let's start our server...
 let server = app.listen(process.env.PORT || 3000, function () {
-  console.log('Listening on port ' + server.address().port);
+  console.log('Listening conduit server on port ' + server.address().port);
 });
